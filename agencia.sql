@@ -10,7 +10,7 @@ marca VARCHAR(100));
 CREATE TABLE herramienta(
 codigoherramienta VARCHAR(100) PRIMARY KEY,
 nombre VARCHAR(100),
-medida DOUBLE,
+medida VARCHAR(100),
 marca VARCHAR(100),
 descripcion VARCHAR(200));
 
