@@ -51,7 +51,9 @@ namespace Presentacion.AgenciaA
 
         private void btnInicio_Click_1(object sender, EventArgs e)
         {
-            pnlContenedor.BringToFront();
+            Close();
+            FrmLogin fl = new FrmLogin();
+            fl.Show();
         }
 
         private void btnProductos_Click_1(object sender, EventArgs e)

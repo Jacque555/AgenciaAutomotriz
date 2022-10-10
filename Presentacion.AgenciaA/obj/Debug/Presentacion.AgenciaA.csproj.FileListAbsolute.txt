@@ -44,3 +44,4 @@ C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Presentacion.AgenciaA\o
 C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Presentacion.AgenciaA\obj\Debug\Presentacion.AgenciaA.FrmHerramienta.resources
 C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Presentacion.AgenciaA\obj\Debug\Presentacion.AgenciaA.FrmProducto.resources
 C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Presentacion.AgenciaA\obj\Debug\Presentacion.AgenciaA.FrmRegistro.resources
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Presentacion.AgenciaA\obj\Debug\Presentacion.AgenciaA.Properties.Resources.resources

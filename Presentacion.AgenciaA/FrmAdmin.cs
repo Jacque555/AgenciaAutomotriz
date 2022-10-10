@@ -45,8 +45,16 @@ namespace Presentacion.AgenciaA
         {
             Actualizar();
         }
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
+            FrmAddUsuario fau = new FrmAddUsuario();
+            fau.ShowDialog();
+            Actualizar();
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+
             eu._IDUsuario = 0;
             eu._RFC = "";
             eu._Contrasena = "";
@@ -59,15 +67,10 @@ namespace Presentacion.AgenciaA
             fau.ShowDialog();
             Actualizar();
         }
-        private void btnEdit_Click(object sender, EventArgs e)
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
         {
-            FrmAddUsuario fau = new FrmAddUsuario();
-            fau.ShowDialog();
-            Actualizar();
-        }
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-            if(dtgAdmin.RowCount > 0)
+            if (dtgAdmin.RowCount > 0)
             {
                 string r = mu.Borrar(eu);
                 if (string.IsNullOrEmpty(r))

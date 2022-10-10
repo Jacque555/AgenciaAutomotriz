@@ -61,15 +61,15 @@ namespace Presentacion.AgenciaA
 
         private void chbMostrarContra_CheckedChanged(object sender, EventArgs e)
         {
-            if(chbMostrarContra.Checked == true)
+            if(chbMostrarContra.Checked == false)
             {
-                txtContrasena.UseSystemPasswordChar = false;
+                txtContrasena.UseSystemPasswordChar = true;
             }
             else
             {
-                if (chbMostrarContra.Checked == false)
+                if (chbMostrarContra.Checked == true)
                 {
-                    txtContrasena.UseSystemPasswordChar = true;
+                    txtContrasena.UseSystemPasswordChar = false;
                 }
             }
         }
@@ -95,6 +95,11 @@ namespace Presentacion.AgenciaA
             this.Hide();
             FrmRegistro fr = new FrmRegistro();
             fr.Show();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -32,55 +32,109 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dtgProducto = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProducto)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(802, 161);
+            this.button1.BackColor = System.Drawing.Color.RosyBrown;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(607, 85);
             this.button1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 66);
+            this.button1.Size = new System.Drawing.Size(45, 34);
             this.button1.TabIndex = 7;
             this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 181);
+            this.label1.Location = new System.Drawing.Point(15, 92);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 27);
+            this.label1.Size = new System.Drawing.Size(105, 27);
             this.label1.TabIndex = 6;
-            this.label1.Text = "NOMBRE:";
+            this.label1.Text = "Producto:";
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(159, 174);
+            this.txtBuscar.Location = new System.Drawing.Point(132, 85);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(530, 34);
+            this.txtBuscar.Size = new System.Drawing.Size(463, 34);
             this.txtBuscar.TabIndex = 5;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // dtgProducto
             // 
+            this.dtgProducto.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dtgProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgProducto.Location = new System.Drawing.Point(11, 243);
+            this.dtgProducto.Location = new System.Drawing.Point(20, 135);
             this.dtgProducto.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.dtgProducto.Name = "dtgProducto";
             this.dtgProducto.RowHeadersWidth = 51;
             this.dtgProducto.RowTemplate.Height = 24;
-            this.dtgProducto.Size = new System.Drawing.Size(888, 255);
+            this.dtgProducto.Size = new System.Drawing.Size(632, 167);
             this.dtgProducto.TabIndex = 4;
             this.dtgProducto.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProducto_CellEnter);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RosyBrown;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(666, 65);
+            this.panel1.TabIndex = 8;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(227, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(212, 45);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "PRODUCTO";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.Location = new System.Drawing.Point(537, 313);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(116, 38);
+            this.btnEliminar.TabIndex = 10;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit.Location = new System.Drawing.Point(405, 313);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(116, 38);
+            this.btnEdit.TabIndex = 9;
+            this.btnEdit.Text = "EDITAR";
+            this.btnEdit.UseVisualStyleBackColor = false;
             // 
             // FrmProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 556);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(672, 371);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscar);
@@ -92,6 +146,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProducto";
             ((System.ComponentModel.ISupportInitialize)(this.dtgProducto)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -103,5 +159,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DataGridView dtgProducto;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEdit;
     }
 }
