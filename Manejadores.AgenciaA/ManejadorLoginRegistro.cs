@@ -14,7 +14,7 @@ namespace Manejadores.AgenciaA
         }
         public string Guardar(EntidadUsuario eu)
         {
-            return _base.Comando(string.Format("SELECT count(*) FROM usuario values(null,'{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
+            return _base.Comando(string.Format("insert into usuario values(null,'{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
                 eu._RFC, eu._Contrasena, eu._Nombre, eu._ApellidoP, eu._ApellidoM, eu._Fechanacimiento, eu._FKIDPermisos));
         }
         public int Login(string lUsuario, string lContrasena)

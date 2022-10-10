@@ -1,0 +1,6 @@
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\bin\Debug\Entidades.AgenciaA.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\bin\Debug\Entidades.AgenciaA.pdb
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\obj\Debug\Entidades.AgenciaA.csproj.AssemblyReference.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\obj\Debug\Entidades.AgenciaA.csproj.CoreCompileInputs.cache
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\obj\Debug\Entidades.AgenciaA.dll
+C:\Users\guada\OneDrive\Escritorio\Presentacion.AgenciaA\Entidades.AgenciaA\obj\Debug\Entidades.AgenciaA.pdb

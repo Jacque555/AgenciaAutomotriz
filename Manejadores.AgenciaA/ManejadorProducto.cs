@@ -12,7 +12,7 @@ namespace Manejadores.AgenciaA
         {
             return ab.Comando(string.Format("insert into producto values('{0}','{1}','{2}','{3}')", ep._Codigobarras,ep._Nombre,ep._Descripcion,ep._Marca));
         }
-        public void Mostrar(DataGridView tabla, string dato)
+        public void Mostrar(string dato, DataGridView tabla)
         {
             tabla.DataSource = ab.Mostrar(string.Format("select * from producto where nombre like '%{0}%' or codigobarras like '%{0}%'", dato), "producto").Tables["producto"];
             tabla.AutoResizeColumns();

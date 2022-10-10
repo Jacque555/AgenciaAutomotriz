@@ -9,7 +9,7 @@ namespace AccesoDatos.AgenciaA
         MySqlConnection _conn;
         public AccesoBase(string s, string u, string p, string b, uint po)
         {
-            _conn = new MySqlConnection(string.Format("server={0}; user={1}; password{2}; database={3}; por={4}", s, u, p, b, po));
+            _conn = new MySqlConnection(string.Format("server={0}; user={1}; password={2}; database={3}; port={4}", s, u, p, b, po));
         }
         public string Comando(string q)
         {

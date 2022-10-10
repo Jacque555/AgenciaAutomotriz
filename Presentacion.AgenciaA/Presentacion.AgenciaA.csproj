@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2E420995-6831-4A33-ACBA-ADC5F3C8B16D}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Presentacion.AgenciaA</RootNamespace>
     <AssemblyName>Presentacion.AgenciaA</AssemblyName>
@@ -30,9 +30,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,8 +47,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddUsuario.Designer.cs">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHerramienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHerramienta.Designer.cs">
+      <DependentUpon>FrmHerramienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProducto.Designer.cs">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistro.Designer.cs">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAddUsuario.resx">
+      <DependentUpon>FrmAddUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHerramienta.resx">
+      <DependentUpon>FrmHerramienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProducto.resx">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistro.resx">
+      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos.AgenciaA\AccesoDatos.AgenciaA.csproj">
+      <Project>{6c83388e-135d-4e60-b796-f6a11cd6e8ee}</Project>
+      <Name>AccesoDatos.AgenciaA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades.AgenciaA\Entidades.AgenciaA.csproj">
+      <Project>{d5ef0e86-436f-4906-b555-ee1ee1881dc5}</Project>
+      <Name>Entidades.AgenciaA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejadores.AgenciaA\Manejadores.AgenciaA.csproj">
+      <Project>{41bc1210-b2e7-425f-9436-d60f31f2c51a}</Project>
+      <Name>Manejadores.AgenciaA</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,10 +1,5 @@
 ﻿using AccesoDatos.AgenciaA;
 using Entidades.AgenciaA;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Manejadores.AgenciaA
@@ -25,8 +20,8 @@ namespace Manejadores.AgenciaA
         }
         public string Editar(EntidadUsuario eu)
         {
-            return ab.Comando(string.Format("update usuario set rfc = '{0}', nombre = '{1}', apellidop = '{2}', apeliidom = '{3}', fechamaciemiento ='{4}', fkidpermisos = '{5}' where idusuario ='{6}'", eu._RFC, eu._Nombre,
-                eu._ApellidoP,eu._ApellidoM,eu._Fechanacimiento,eu._FKIDPermisos,eu._IDUsuario));
+            return ab.Comando(string.Format("update usuario set rfc = '{0}', nombre = '{1}', apellidop = '{2}', apeliidom = '{3}', fechamaciemiento ='{4}', fkidpermisos = '{5}' where idusuario ='{6}'", 
+                eu._RFC, eu._Nombre,eu._ApellidoP,eu._ApellidoM,eu._Fechanacimiento,eu._FKIDPermisos,eu._IDUsuario));
         }
         public string Borrar(EntidadUsuario eu)
         {
