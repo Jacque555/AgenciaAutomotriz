@@ -14,7 +14,7 @@ namespace Presentacion.AgenciaA
 {
     public partial class FrmHerramienta : Form
     {
-        EntidadesHerramienta eh;
+        public static EntidadesHerramienta eh;
         ManejadorHerramient mh;
         public FrmHerramienta()
         {
@@ -42,6 +42,43 @@ namespace Presentacion.AgenciaA
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
             Actualizar();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            eh._Codigoherramienta = "";
+            eh._Nombre = "";
+            eh._Medida = "";
+            eh._Descripcion = "";
+            eh._Marca = "";
+            FrmAddHerramienta fah = new FrmAddHerramienta();
+            fah.ShowDialog();
+            Actualizar();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            FrmAddHerramienta fah = new FrmAddHerramienta();
+            fah.ShowDialog();
+            Actualizar();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dtgHerramienta.RowCount > 0)
+            {
+                string r = mh.Borrar(eh);
+                if (string.IsNullOrEmpty(r))
+                {
+                    MessageBox.Show(r);
+                    Actualizar();
+                }
+                Actualizar();
+            }
+            else
+            {
+                MessageBox.Show("Seleccionar un registro");
+            }
         }
     }
 }

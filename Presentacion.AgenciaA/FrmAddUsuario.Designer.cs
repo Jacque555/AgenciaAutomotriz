@@ -100,7 +100,7 @@
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.RosyBrown;
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnGuardar.Location = new System.Drawing.Point(342, 494);
+            this.btnGuardar.Location = new System.Drawing.Point(362, 494);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(139, 40);
             this.btnGuardar.TabIndex = 3;
@@ -112,7 +112,7 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.RosyBrown;
             this.btnCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelar.Location = new System.Drawing.Point(487, 494);
+            this.btnCancelar.Location = new System.Drawing.Point(507, 494);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(139, 40);
             this.btnCancelar.TabIndex = 4;
@@ -214,7 +214,9 @@
             this.txtPermiso.FormattingEnabled = true;
             this.txtPermiso.Items.AddRange(new object[] {
             "ADMIN",
-            "GENERAL"});
+            "GENERAL",
+            "PRODUCTOS",
+            "HERRAMIENTAS"});
             this.txtPermiso.Location = new System.Drawing.Point(18, 499);
             this.txtPermiso.Name = "txtPermiso";
             this.txtPermiso.Size = new System.Drawing.Size(276, 35);

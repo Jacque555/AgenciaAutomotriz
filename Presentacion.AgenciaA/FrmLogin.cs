@@ -35,7 +35,7 @@ namespace Presentacion.AgenciaA
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "USUARIO";
-                txtUsuario.ForeColor = Color.Gray;
+                txtUsuario.ForeColor = Color.Red;
             }
         }
 
@@ -54,22 +54,22 @@ namespace Presentacion.AgenciaA
             if (txtContrasena.Text == "")
             {
                 txtContrasena.Text = "CONTRASEÑA";
-                txtContrasena.ForeColor = Color.Gray;
+                txtContrasena.ForeColor = Color.Red;
                 txtContrasena.UseSystemPasswordChar = false;
             }
         }
 
         private void chbMostrarContra_CheckedChanged(object sender, EventArgs e)
         {
-            if(chbMostrarContra.Checked == false)
+            if(chbMostrarContra.Checked == true)
             {
-                txtContrasena.UseSystemPasswordChar = true;
+                txtContrasena.UseSystemPasswordChar = false;
             }
             else
             {
-                if (chbMostrarContra.Checked == true)
+                if (chbMostrarContra.Checked == false)
                 {
-                    txtContrasena.UseSystemPasswordChar = false;
+                    txtContrasena.UseSystemPasswordChar = true;
                 }
             }
         }

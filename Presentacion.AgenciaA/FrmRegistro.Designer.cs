@@ -169,7 +169,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(327, 440);
+            this.label6.Location = new System.Drawing.Point(12, 450);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(213, 27);
             this.label6.TabIndex = 13;
@@ -178,7 +178,7 @@
             // txtApellidom
             // 
             this.txtApellidom.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtApellidom.Location = new System.Drawing.Point(332, 470);
+            this.txtApellidom.Location = new System.Drawing.Point(17, 480);
             this.txtApellidom.Name = "txtApellidom";
             this.txtApellidom.Size = new System.Drawing.Size(271, 34);
             this.txtApellidom.TabIndex = 12;
@@ -188,7 +188,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 440);
+            this.label7.Location = new System.Drawing.Point(327, 450);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(211, 27);
             this.label7.TabIndex = 15;
@@ -197,7 +197,7 @@
             // txtFecha
             // 
             this.txtFecha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txtFecha.Location = new System.Drawing.Point(17, 470);
+            this.txtFecha.Location = new System.Drawing.Point(332, 480);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(271, 34);
             this.txtFecha.TabIndex = 14;
@@ -258,7 +258,9 @@
             this.txtPermisos.FormattingEnabled = true;
             this.txtPermisos.Items.AddRange(new object[] {
             "ADMIN",
-            "GENERAL"});
+            "GENERAL",
+            "PRODUCTOS",
+            "HERRAMIENTAS"});
             this.txtPermisos.Location = new System.Drawing.Point(17, 566);
             this.txtPermisos.Name = "txtPermisos";
             this.txtPermisos.Size = new System.Drawing.Size(271, 35);

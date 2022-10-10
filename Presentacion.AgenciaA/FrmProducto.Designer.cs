@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.dtgProducto = new System.Windows.Forms.DataGridView();
@@ -40,17 +40,18 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(607, 85);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 34);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAgregar.Location = new System.Drawing.Point(607, 85);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(45, 34);
+            this.btnAgregar.TabIndex = 7;
+            this.btnAgregar.Text = "+";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label1
             // 
@@ -100,7 +101,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(227, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 45);
+            this.label2.Size = new System.Drawing.Size(206, 43);
             this.label2.TabIndex = 0;
             this.label2.Text = "PRODUCTO";
             // 
@@ -114,6 +115,7 @@
             this.btnEliminar.TabIndex = 10;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEdit
             // 
@@ -125,6 +127,7 @@
             this.btnEdit.TabIndex = 9;
             this.btnEdit.Text = "EDITAR";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // FrmProducto
             // 
@@ -135,7 +138,7 @@
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.dtgProducto);
@@ -155,7 +158,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.DataGridView dtgProducto;

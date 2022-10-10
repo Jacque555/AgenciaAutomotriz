@@ -93,6 +93,16 @@ namespace Presentacion.AgenciaA.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_open_end_wrench_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-open-end-wrench-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_tesla_model_3_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-tesla-model-3-100", resourceCulture);
@@ -106,6 +116,16 @@ namespace Presentacion.AgenciaA.Properties {
         internal static System.Drawing.Bitmap icons8_usuario_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_volver_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-volver-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

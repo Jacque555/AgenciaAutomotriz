@@ -17,10 +17,27 @@ namespace Presentacion.AgenciaA
         public FrmPrincipal()
         {
             InitializeComponent();
+            btnHerramienta.Hide();
+            btnProductos.Hide();
             btnAdmin.Hide();
             if (FrmLogin.val == "ADMIN")
             {
                 btnAdmin.Show();
+                btnHerramienta.Show();
+                btnProductos.Show();
+            }
+            if (FrmLogin.val == "PRODUCTOS")
+            {
+                btnProductos.Show();
+            }
+            if (FrmLogin.val == "HERRAMIENTAS")
+            {
+                btnHerramienta.Show();
+            }
+            if (FrmLogin.val == "GENERAL")
+            {
+                btnHerramienta.Show();
+                btnProductos.Show();
             }
         }
         public static Form frmactivo = null;

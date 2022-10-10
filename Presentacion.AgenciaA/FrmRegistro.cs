@@ -37,7 +37,7 @@ namespace Presentacion.AgenciaA
             if (txtUsuario.Text == "")
             {
                 txtUsuario.Text = "USUARIO";
-                txtUsuario.ForeColor = Color.Gray;
+                txtUsuario.ForeColor = Color.Red;
             }
         }
 
@@ -56,7 +56,7 @@ namespace Presentacion.AgenciaA
             if (txtContraseña.Text == "")
             {
                 txtContraseña.Text = "CONTRASEÑA";
-                txtContraseña.ForeColor = Color.Gray;
+                txtContraseña.ForeColor = Color.Red;
                 txtContraseña.UseSystemPasswordChar = false;
             }
         }
@@ -76,7 +76,7 @@ namespace Presentacion.AgenciaA
             if (txtContraseña.Text == "")
             {
                 txtContraseña.Text = "CONFIRMAR CONTRASEÑA";
-                txtContraseña.ForeColor = Color.Gray;
+                txtContraseña.ForeColor = Color.Red;
                 txtContraseña.UseSystemPasswordChar = false;
             }
         }
@@ -111,7 +111,7 @@ namespace Presentacion.AgenciaA
             if (txtNombre.Text == "")
             {
                 txtNombre.Text = "NOMBRE(S)";
-                txtNombre.ForeColor = Color.Gray;
+                txtNombre.ForeColor = Color.Red;
             }
         }
         private void txtApellidoP_Enter(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace Presentacion.AgenciaA
             if (txtApellidoP.Text == "")
             {
                 txtApellidoP.Text = "APELLIDO PATERNO";
-                txtApellidoP.ForeColor = Color.Gray;
+                txtApellidoP.ForeColor = Color.Red;
             }
         }
 
@@ -146,13 +146,13 @@ namespace Presentacion.AgenciaA
             if (txtApellidom.Text == "")
             {
                 txtApellidom.Text = "APELLIDO MATERNO";
-                txtApellidom.ForeColor = Color.Gray;
+                txtApellidom.ForeColor = Color.Red;
             }
         }
 
         private void txtFecha_Enter(object sender, EventArgs e)
         {
-            if (txtFecha.Text == "FECHA DE NACIMIENTO")
+            if (txtFecha.Text == "AAAA/MM/DD")
             {
                 txtFecha.Text = "";
                 txtFecha.ForeColor = Color.Gainsboro;
@@ -163,8 +163,8 @@ namespace Presentacion.AgenciaA
         {
             if (txtFecha.Text == "")
             {
-                txtFecha.Text = "FECHA DE NACIMIENTO";
-                txtFecha.ForeColor = Color.Gray;
+                txtFecha.Text = "AAAA/MM/DD";
+                txtFecha.ForeColor = Color.Red;
             }
         }
 
@@ -182,7 +182,7 @@ namespace Presentacion.AgenciaA
             if (txtPermisos.Text == "")
             {
                 txtFecha.Text = "PERMISOS";
-                txtFecha.ForeColor = Color.Gray;
+                txtFecha.ForeColor = Color.Red;
             }
         }
 
